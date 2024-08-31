@@ -1,3 +1,0 @@
-class StringCalculator
-
-end
