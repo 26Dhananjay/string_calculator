@@ -21,8 +21,14 @@ RSpec.describe StringCalculation do
 		end
 
 		context "When the provided input is multiple numbers seprated by comma" do
-			it "Will returns sum of the numbers" do 
+			it "Will returns sum of all the numbers" do 
 				expect(StringCalculation.add("2,3,4,5")).to eq(14)
+			end
+		end
+
+		context "When the provided input has numbers separated by new lines" do
+			it "returns the sum of all numbers" do
+				expect(StringCalculation.add("1\n2,3")).to eq(6)
 			end
 		end
 
